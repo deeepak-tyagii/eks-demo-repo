@@ -4,11 +4,14 @@ metadata:
   name: frontend-proxy
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:788000630483:certificate/2d19f21e-d41f-48ab-a806-05365ae77156
     alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/backend-protocol: HTTP
 spec:
   ingressClassName: alb
   rules:
-    - host: example.com
+    - host: otel.deepaktyagi.tech
       http:
         paths:
           - path: "/"

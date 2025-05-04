@@ -54,3 +54,8 @@ test/tracetesting/tracetesting-vars.yaml
 *.apk
 
 !src/currency/build
+
+infra/.terraform
+infra/.terraform/**
+infra/.terraform.lock.hcl
+infra/.DS_Store
