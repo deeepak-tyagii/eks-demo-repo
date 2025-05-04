@@ -58,7 +58,11 @@ spec:
             - name: OTEL_RESOURCE_ATTRIBUTES
               value: service.name=$(OTEL_SERVICE_NAME),service.namespace=opentelemetry-demo,service.version=1.12.0
           resources:
+            requests:
+              memory: "5Mi"
+              cpu: "2m"
             limits:
-              memory: 20Mi
+              memory: "20Mi"
+              cpu: "5m"
           volumeMounts:
       volumes:
