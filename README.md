@@ -14,9 +14,7 @@ This repository contains resources and scripts for practicing and setting up Ama
 
 - `infra/` – Infrastructure configuration (e.g., Terraform)
 - `scripts/` – Automation and helper scripts
-- `manifests/` – Kubernetes YAML files
-- `docker/` – Docker-related files
-- `logs/` – Config/log-related examples
+- `kubernetes/` – Kubernetes YAML files
 
 ## Prerequisites
 
