@@ -14,6 +14,7 @@ This repository contains resources and scripts for practicing and setting up Ama
 
 - `infra/` – Infrastructure configuration (e.g., Terraform)
 - `scripts/` – Automation and helper scripts
+- `src/` - Application Code for OpenTelemetry demo
 - `kubernetes/` – Kubernetes YAML files
 
 ## Prerequisites
